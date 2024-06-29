@@ -1057,10 +1057,9 @@ section,
 /*  Why choose us section  */
 .choose{
         display: flex;
-        
         justify-content: space-between;
         align-items: center;
-        color: red;
+        
 
 }
 /*--------------------------------------------------------------
@@ -1240,6 +1239,21 @@ section,
   margin: 0 0 0 60px;
   font-family: var(--heading-font);
   font-size: 14px;
+}
+
+.buttonorange{
+  background-color: orange;
+ 
+  padding: 10px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+:hover.buttonorange{
+  background-color: rgb(246, 188, 81);
+  
 }
 
 /*--------------------------------------------------------------
