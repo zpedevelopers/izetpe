@@ -263,16 +263,7 @@ h6 {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-body{
-  font-family: 'Nunito', 'Quicksand', 'Roboto', -apple-system, system, system-ui, sans-serif;
-  background: #eee;
-  font-size: 3em;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
+
 
 /* Header underline design */
 
