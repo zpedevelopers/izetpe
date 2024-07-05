@@ -81,113 +81,91 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
+            <li class="current">products Details</li>
           </ol>
         </nav>
-        <h1>About</h1>
+        <h1>products Details</h1>
       </div>
     </div><!-- End Page Title -->
 
-        <!-- About Section -->
-        <section id="about" class="section about">
-
-          <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
-            <div class="row gy-4">
-              <div class="col-lg-6 order-2 order-lg-3">
-                <img src="assets/img/about.png" class="img-fluid" alt="" style="width: 450px;">
-              </div>
-              <div class="container section-title" >
-                <h2 style="color: orange;">
-                     OUR STORY
-                 </h2>
-              </div>
-              <div class="col-lg-6 order-4 order-lg-4 content">
-               
-              
-                <p style="margin-bottom: 50px;">
-                  We are As a prominent financial services provider dedicated to serving the digital generation, our primary goal is to simplify and enhance banking experiences, ensuring accessibility and security for all. We strive to bridge financial gaps, offering a diverse array of products and services such as ATM and mobile banking, debit and prepaid cards, loans, investments, and more. Explore our comprehensive range on our website.
-                </p>
-                <p>
-                  Introducing ZPe, your go-to digital banking payment and fund transfer service. Whether you're an individual or a business, our secure and reliable services, including cash deposit and withdrawal options, cater to your financial needs. Backed by positive customer reviews, ZPe is recognized for its reliability and trustworthiness. Conveniently located in both rural and urban areas, ZPe ATM's provide a swift and secure means of accessing your funds.
-                </p>
-                <button class="buttonorange">Know More</button>
-              </div>
-            </div>
-    
-          </div>
-    
-        </section><!-- /About Section -->
-
-    
-
-    <!-- Clients Section -->
-    <section id="clients" class="section clients">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Clients</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas</p>
-      </div><!-- End Section Title -->
+    <!-- products Details Section -->
+    <section id="product-details" class="product-details section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="product-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
                 }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/products/app-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/products/product-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/products/branding-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/products/books-1.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="col-lg-4">
+            <div class="products-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web design</li>
+                <li><strong>Client</strong>: ASU Company</li>
+                <li><strong>Project date</strong>: 01 March, 2020</li>
+                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              </ul>
+            </div>
+            <div class="products-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+              <p>
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              </p>
+            </div>
+          </div>
+
         </div>
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </section><!-- /products Details Section -->
 
   </main>
 
-<!-- Footer Section -->
+ <!-- Footer Section -->
 
-<footer id="footer" class="footer position-relative bg-body-secondary ">
+ <footer id="footer" class="footer position-relative bg-body-secondary ">
 
     
 
