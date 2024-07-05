@@ -1477,16 +1477,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# products Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.products .products-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.products .products-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -1498,36 +1498,36 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.products .products-filters li:hover,
+.products .products-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.products .products-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.products .products-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .products .products-filters li {
     font-size: 14px;
     margin: 0 5px;
   }
 }
 
-.portfolio .portfolio-content {
+.products .products-content {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio .portfolio-content img {
+.products .products-content img {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-content .portfolio-info {
+.products .products-content .products-info {
   opacity: 0;
   position: absolute;
   inset: 0;
@@ -1537,7 +1537,7 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 {
+.products .products-content .products-info h4 {
   font-size: 14px;
   padding: 5px 10px;
   font-weight: 400;
@@ -1546,7 +1546,7 @@ section,
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info p {
+.products .products-content .products-info p {
   position: absolute;
   bottom: 10px;
   text-align: center;
@@ -1558,8 +1558,8 @@ section,
   color: rgba(255, 255, 255, 0.8);
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link,
-.portfolio .portfolio-content .portfolio-info .details-link {
+.products .products-content .products-info .preview-link,
+.products .products-content .products-info .details-link {
   position: absolute;
   left: calc(50% - 40px);
   font-size: 26px;
@@ -1569,55 +1569,55 @@ section,
   line-height: 1.2;
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover {
+.products .products-content .products-info .preview-link:hover,
+.products .products-content .products-info .details-link:hover {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info .details-link {
+.products .products-content .products-info .details-link {
   left: 50%;
   font-size: 34px;
   line-height: 0;
 }
 
-.portfolio .portfolio-content:hover .portfolio-info {
+.products .products-content:hover .products-info {
   opacity: 1;
 }
 
-.portfolio .portfolio-content:hover img {
+.products .products-content:hover img {
   transform: scale(1.1);
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
+# products Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.products-details .products-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.products-details .products-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.products-details .products-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.products-details .products-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info {
+.products-details .products-info {
   background-color: var(--surface-color);
   padding: 30px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-details .portfolio-info h3 {
+.products-details .products-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1625,27 +1625,27 @@ section,
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.portfolio-details .portfolio-info ul {
+.products-details .products-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.products-details .products-info ul li+li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.products-details .products-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.products-details .products-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.products-details .products-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
