@@ -2438,8 +2438,3 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
-
-/* validate form style */
-.errorform { color: red; }
-.centered_content { display: flex; flex-direction: column; align-items: center; }
-.modal-body { padding: 2rem; }
