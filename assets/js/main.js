@@ -184,3 +184,205 @@
   });
 
 })();
+
+ /**
+   * addEventListener for gallery page
+   */
+
+document.addEventListener('DOMContentLoaded', function () {
+  const allFilter = document.getElementById('filter-all');
+  const atmFilter = document.getElementById('filter-atm');
+  const videoFilter = document.getElementById('filter-videos');
+  const items = document.querySelectorAll('.row .col-md-4');
+
+  allFilter.addEventListener('click', function () {
+      items.forEach(item => item.classList.remove('hidden'));
+  });
+
+  atmFilter.addEventListener('click', function () {
+      items.forEach(item => {
+          if (item.classList.contains('filter-app')) {
+              item.classList.remove('hidden');
+          } else {
+              item.classList.add('hidden');
+          }
+      });
+  });
+
+  videoFilter.addEventListener('click', function () {
+      items.forEach(item => {
+          if (item.classList.contains('filter-product')) {
+              item.classList.remove('hidden');
+          } else {
+              item.classList.add('hidden');
+          }
+      });
+  });
+});
+
+
+// validateForm for get in touch
+function validateForm() {
+  let isValid = true;
+
+  // Clear previous error messages
+  document.getElementById("c_fnameErr").innerHTML = "";
+  document.getElementById("c_lnameErr").innerHTML = "";
+  document.getElementById("c_emailErr").innerHTML = "";
+  document.getElementById("c_mobileErr").innerHTML = "";
+  document.getElementById("c_messageErr").innerHTML = "";
+
+  // Get form values
+  const fname = document.getElementById("c_fname").value;
+  const lname = document.getElementById("c_lname").value;
+  const email = document.getElementById("c_email").value;
+  const mobile = document.getElementById("c_mobile").value;
+  const message = document.getElementById("c_message").value;
+
+  // Validate first name
+  if (!fname) {
+      document.getElementById("c_fnameErr").innerHTML = "First name is required.";
+      isValid = false;
+  }
+
+  // Validate last name
+  if (!lname) {
+      document.getElementById("c_lnameErr").innerHTML = "Last name is required.";
+      isValid = false;
+  }
+
+  // Validate email
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!email) {
+      document.getElementById("c_emailErr").innerHTML = "Email is required.";
+      isValid = false;
+  } else if (!emailPattern.test(email)) {
+      document.getElementById("c_emailErr").innerHTML = "Invalid email format.";
+      isValid = false;
+  }
+
+  // Validate mobile number
+  const mobilePattern = /^[0-9]{10}$/;
+  if (!mobile) {
+      document.getElementById("c_mobileErr").innerHTML = "Mobile number is required.";
+      isValid = false;
+  } else if (!mobilePattern.test(mobile)) {
+      document.getElementById("c_mobileErr").innerHTML = "Invalid mobile number.";
+      isValid = false;
+  }
+
+  // Validate message
+  if (!message) {
+      document.getElementById("c_messageErr").innerHTML = "Message is required.";
+      isValid = false;
+  }
+
+  // If form is not valid, prevent submission
+  return isValid;
+}
+
+
+// Request call back validate form
+function validateCallbackForm() {
+  let isValid = true;
+
+  // Clear previous error messages
+  document.getElementById("callback_nameErr").innerHTML = "";
+  document.getElementById("callback_phoneErr").innerHTML = "";
+  document.getElementById("callback_messageErr").innerHTML = "";
+
+  // Get form values
+  const name = document.getElementById("callback_name").value;
+  const phone = document.getElementById("callback_phone").value;
+  const message = document.getElementById("callback_message").value;
+
+  // Validate name
+  if (!name) {
+      document.getElementById("callback_nameErr").innerHTML = "Name is required.";
+      isValid = false;
+  }
+
+  // Validate phone number
+  const phonePattern = /^[0-9]{10}$/;
+  if (!phone) {
+      document.getElementById("callback_phoneErr").innerHTML = "Phone number is required.";
+      isValid = false;
+  } else if (!phonePattern.test(phone)) {
+      document.getElementById("callback_phoneErr").innerHTML = "Invalid phone number.";
+      isValid = false;
+  }
+
+  // Validate message
+  if (!message) {
+      document.getElementById("callback_messageErr").innerHTML = "Message is required.";
+      isValid = false;
+  }
+
+  // If form is not valid, prevent submission
+  return isValid;
+}
+
+
+
+function popUp() {
+  // Your validation and form submission logic here
+  alert('Form submitted');
+}
+
+
+
+// For enquiry validate form
+function validateForm() {
+  var isValid = true;
+  var form = document.getElementById("enquiryForm");
+
+  // Reset error messages
+  document.getElementById("p_fnameErr").innerText = "";
+  document.getElementById("p_lnameErr").innerText = "";
+  document.getElementById("p_emailErr").innerText = "";
+  document.getElementById("p_mobileErr").innerText = "";
+  document.getElementById("p_productErr").innerText = "";
+  document.getElementById("p_messageErr").innerText = "";
+
+  // Validate First Name
+  if (form.p_fname.value.trim() === "") {
+      document.getElementById("p_fnameErr").innerText = "First Name is required.";
+      isValid = false;
+  }
+
+  // Validate Last Name
+  if (form.p_lname.value.trim() === "") {
+      document.getElementById("p_lnameErr").innerText = "Last Name is required.";
+      isValid = false;
+  }
+
+  // Validate Email
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(form.p_email.value)) {
+      document.getElementById("p_emailErr").innerText = "Valid Email is required.";
+      isValid = false;
+  }
+
+  // Validate Mobile Number
+  var mobilePattern = /^[0-9]{10}$/;
+  if (!mobilePattern.test(form.p_mobile.value)) {
+      document.getElementById("p_mobileErr").innerText = "Valid Mobile Number is required.";
+      isValid = false;
+  }
+
+  // Validate Product Selection
+  if (form.p_product.value === "Select Product") {
+      document.getElementById("p_productErr").innerText = "Please select a product.";
+      isValid = false;
+  }
+
+  // If form is valid, show success message
+  if (isValid) {
+      document.getElementById("succ-popup-alert").innerText = "Form submitted successfully!";
+      document.getElementById("fail-popup-alert").innerText = "";
+  } else {
+      document.getElementById("fail-popup-alert").innerText = "Please correct the errors and try again.";
+      document.getElementById("succ-popup-alert").innerText = "";
+  }
+}
+
