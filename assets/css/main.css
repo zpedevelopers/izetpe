@@ -2527,3 +2527,5 @@ section {
 .form-container .cancel {
     background-color: red;
 }
+
+.hidden { display: none; }
