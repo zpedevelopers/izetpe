@@ -426,32 +426,43 @@
      
           <!-- Request a callback section  -->
 
-      <section class="bg-secondary" data-aos="fade-up" data-aos-delay="100">
-        <div class="container" >
-          <div class="row align-items-center text-white"  >
-            <div class="col-lg-4">
-              <div class="border border-2 border-primary-subtle p-4 py-lg-5 text-center rounded-3"data-aos="fade-up" data-aos-delay="100">
-                
-                  <h4   style="transform: translate(0px, 0px); opacity: 1;color: orange; font-weight: bolder;">Request a Call Back</h4>
-              
-                  <p class="px-lg-1 text-100 mb-0" style="transform: translate(0px, 0px); opacity: 1;">Would you like to speak to one of our financial advisers over the phone? Just submit your details and we’ll be in touch shortly. You can also email us if you would prefer.</p>
-               
-              </div>
-            </div>
-            <div class="col-lg-8 ps-lg-5 mt-6 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-              <h5 class="text-white">I would like to discuss:</h5>
-              <form class="mt-4">
-                <div class="row">
-                  <div class="col-6"><input class="form-control" type="text" placeholder="Your Name" aria-label="Your Name" ></div>
-                  <div class="col-6"><input class="form-control" type="text" placeholder="Phone Number" aria-label="Phone Number" ></div>
-                  <div class="col-6 mt-4"><input class="form-control" type="text" placeholder="Messsage" aria-label="Messsage" ></div>
-                  <div class="col-6 mt-4"><button class="btn btn-warning w-100 fw-bold" type="submit">Submit</button></div>
+          <section class="bg-secondary" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+                <div class="row align-items-center text-white">
+                    <div class="col-lg-4">
+                        <div class="border border-2 border-primary-subtle p-4 py-lg-5 text-center rounded-3" data-aos="fade-up" data-aos-delay="100">
+                            <h4 style="transform: translate(0px, 0px); opacity: 1; color: orange; font-weight: bolder;">Request a Call Back</h4>
+                            <p class="px-lg-1 text-100 mb-0" style="transform: translate(0px, 0px); opacity: 1;">Would you like to speak to one of our financial advisers over the phone? Just submit your details and we’ll be in touch shortly. You can also email us if you would prefer.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 ps-lg-5 mt-6 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                        <h5 class="text-white">I would like to discuss:</h5>
+                        <form class="mt-4" onsubmit="return validateCallbackForm()">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input class="form-control" type="text" placeholder="Your Name" aria-label="Your Name" id="callback_name">
+                                    <div class="errorform text-danger" id="callback_nameErr"></div>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-control" type="text" placeholder="Phone Number" aria-label="Phone Number" id="callback_phone">
+                                    <div class="errorform text-danger" id="callback_phoneErr"></div>
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <input class="form-control" type="text" placeholder="Message" aria-label="Message" id="callback_message">
+                                    <div class="errorform text-danger" id="callback_messageErr"></div>
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <button class="btn btn-warning w-100 fw-bold" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </form>
             </div>
-          </div>
-        </div><!-- end of .container-->
-      </section>
+        </section>
+        
+       
+        
       <!-- Footer Section -->
 
   <footer id="footer" class="footer position-relative bg-body-secondary ">
