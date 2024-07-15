@@ -362,3 +362,71 @@ function openForm() {
 function closeForm() {
   document.getElementById("popupForm").style.display = "none";
 }
+
+
+// get in touch form validate
+
+function validateForm() {
+  let isValid = true;
+
+  // Clear previous error messages
+  document.getElementById('c_fnameErr').innerHTML = "";
+  document.getElementById('c_lnameErr').innerHTML = "";
+  document.getElementById('c_emailErr').innerHTML = "";
+  document.getElementById('c_mobileErr').innerHTML = "";
+  document.getElementById('c_messageErr').innerHTML = "";
+  document.getElementById('succ-client-alert').innerHTML = "";
+  document.getElementById('fail-client-alert').innerHTML = "";
+
+  // Validate First Name
+  const firstName = document.getElementById('c_fname').value.trim();
+  if (firstName === "") {
+      document.getElementById('c_fnameErr').innerHTML = "First Name is required.";
+      isValid = false;
+  }
+
+  // Validate Last Name
+  const lastName = document.getElementById('c_lname').value.trim();
+  if (lastName === "") {
+      document.getElementById('c_lnameErr').innerHTML = "Last Name is required.";
+      isValid = false;
+  }
+
+  // Validate Email
+  const email = document.getElementById('c_email').value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email === "") {
+      document.getElementById('c_emailErr').innerHTML = "Email is required.";
+      isValid = false;
+  } else if (!emailPattern.test(email)) {
+      document.getElementById('c_emailErr').innerHTML = "Invalid Email format.";
+      isValid = false;
+  }
+
+  // Validate Mobile Number
+  const mobile = document.getElementById('c_mobile').value.trim();
+  const mobilePattern = /^[0-9]{10}$/;
+  if (mobile === "") {
+      document.getElementById('c_mobileErr').innerHTML = "Mobile Number is required.";
+      isValid = false;
+  } else if (!mobilePattern.test(mobile)) {
+      document.getElementById('c_mobileErr').innerHTML = "Invalid Mobile Number.";
+      isValid = false;
+  }
+
+  // Validate Message
+  const message = document.getElementById('c_message').value.trim();
+  if (message === "") {
+      document.getElementById('c_messageErr').innerHTML = "Message is required.";
+      isValid = false;
+  }
+
+  // If all fields are valid
+  if (isValid) {
+      document.getElementById('succ-client-alert').innerHTML = "Form submitted successfully!";
+  } else {
+      document.getElementById('fail-client-alert').innerHTML = "Please fix the errors above.";
+  }
+
+  return isValid;
+}
