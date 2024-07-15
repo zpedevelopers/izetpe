@@ -262,48 +262,9 @@ function popUp() {
 
 
 /* enquiey form validate */
-function validateCallbackForm() {
+function validateEnquiryForm() {
   let isValid = true;
-
-  // Clear previous error messages
-  document.getElementById("callback_nameErr").innerHTML = "";
-  document.getElementById("callback_phoneErr").innerHTML = "";
-  document.getElementById("callback_messageErr").innerHTML = "";
-
-  // Get form values
-  const name = document.getElementById("callback_name").value;
-  const phone = document.getElementById("callback_phone").value;
-  const message = document.getElementById("callback_message").value;
-
-  // Validate name
-  if (!name) {
-      document.getElementById("callback_nameErr").innerHTML = "Name is required.";
-      isValid = false;
-  }
-
-  // Validate phone number
-  const phonePattern = /^[0-9]{10}$/;
-  if (!phone) {
-      document.getElementById("callback_phoneErr").innerHTML = "Phone number is required.";
-      isValid = false;
-  } else if (!phonePattern.test(phone)) {
-      document.getElementById("callback_phoneErr").innerHTML = "Invalid phone number.";
-      isValid = false;
-  }
-
-  // Validate message
-  if (!message) {
-      document.getElementById("callback_messageErr").innerHTML = "Message is required.";
-      isValid = false;
-  }
-
-  // If form is not valid, prevent submission
-  return isValid;
-}
-
-function validateForm() {
-  var isValid = true;
-  var form = document.getElementById("enquiryForm");
+  const form = document.getElementById("enquiryForm");
 
   // Reset error messages
   document.getElementById("p_fnameErr").innerText = "";
@@ -326,14 +287,14 @@ function validateForm() {
   }
 
   // Validate Email
-  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(form.p_email.value)) {
       document.getElementById("p_emailErr").innerText = "Valid Email is required.";
       isValid = false;
   }
 
   // Validate Mobile Number
-  var mobilePattern = /^[0-9]{10}$/;
+  const mobilePattern = /^[0-9]{10}$/;
   if (!mobilePattern.test(form.p_mobile.value)) {
       document.getElementById("p_mobileErr").innerText = "Valid Mobile Number is required.";
       isValid = false;
@@ -345,6 +306,12 @@ function validateForm() {
       isValid = false;
   }
 
+  // Validate Message
+  if (form.p_message.value.trim() === "") {
+      document.getElementById("p_messageErr").innerText = "Message is required.";
+      isValid = false;
+  }
+
   // If form is valid, show success message
   if (isValid) {
       document.getElementById("succ-popup-alert").innerText = "Form submitted successfully!";
@@ -353,20 +320,12 @@ function validateForm() {
       document.getElementById("fail-popup-alert").innerText = "Please correct the errors and try again.";
       document.getElementById("succ-popup-alert").innerText = "";
   }
+
+  return isValid;
 }
 
-function openForm() {
-  document.getElementById("popupForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("popupForm").style.display = "none";
-}
-
-
-// get in touch form validate
-
-function validateForm() {
+// get in touch 
+function validateContactForm() {
   let isValid = true;
 
   // Clear previous error messages

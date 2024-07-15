@@ -183,62 +183,62 @@
 
 <!-- Enquiry Content -->
 <div class="modal fade" id="modalform" tabindex="-1" aria-labelledby="modalformLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="form_sec centered_content">
-                    <form method="post" action="" class="contact-form" id="enquiryForm">
-                        <div class="form-group row">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label for="p_fname">First Name*</label>
-                                <input type="text" name="p_fname" id="p_fname" class="form-control">
-                                <div class="errorform" id="p_fnameErr"></div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label for="p_lname">Last Name*</label>
-                                <input type="text" name="p_lname" id="p_lname" class="form-control">
-                                <div class="errorform" id="p_lnameErr"></div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="p_email">Email*</label>
-                            <input type="email" name="p_email" id="p_email" class="form-control">
-                            <div class="errorform" id="p_emailErr"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="p_mobile">Mobile Number*</label>
-                            <input type="tel" name="p_mobile" id="p_mobile" class="form-control">
-                            <div class="errorform" id="p_mobileErr"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="p_product">Select Product</label>
-                            <select class="form-control" name="p_product" id="p_product">
-                                <option value="Select Product" disabled selected>Select Product</option>
-                                <option value="Cdm One +">CDM ONE +</option>
-                                <option value="Aqpe User Mobile App">AQPE USER MOBILE APP</option>
-                                <option value="Retailers ATM">RETAILERS ATM</option>
-                                <option value="Merchant Payment Device">MERCHANT PAYMENT DEVICE</option>
-                            </select>
-                            <div class="errorform" id="p_productErr"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="p_message">Message</label>
-                            <textarea name="p_message" id="p_message" class="form-control" rows="5"></textarea>
-                            <div class="errorform" id="p_messageErr"></div>
-                        </div>
-                        <div class="form-group mt-3">
-                            <button type="button" class="btn btn-primary" id="send_btn1" onclick="validateForm()">Send Message</button>
-                            <div id="succ-popup-alert" style="color: green; padding: 6px 0px 0px 16px; text-align: center; font-family: 'Gilroy-Bold';"></div>
-                            <div id="fail-popup-alert" style="color: red; padding: 6px 0px 0px 16px; text-align: center; font-family: 'Gilroy-Bold';"></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="form_sec centered_content">
+                  <form method="post" action="" class="contact-form" id="enquiryForm">
+                      <div class="form-group row">
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                              <label for="p_fname">First Name*</label>
+                              <input type="text" name="p_fname" id="p_fname" class="form-control">
+                              <div class="errorform" id="p_fnameErr"></div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                              <label for="p_lname">Last Name*</label>
+                              <input type="text" name="p_lname" id="p_lname" class="form-control">
+                              <div class="errorform" id="p_lnameErr"></div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="p_email">Email*</label>
+                          <input type="email" name="p_email" id="p_email" class="form-control">
+                          <div class="errorform" id="p_emailErr"></div>
+                      </div>
+                      <div class="form-group">
+                          <label for="p_mobile">Mobile Number*</label>
+                          <input type="tel" name="p_mobile" id="p_mobile" class="form-control">
+                          <div class="errorform" id="p_mobileErr"></div>
+                      </div>
+                      <div class="form-group">
+                          <label for="p_product">Select Product</label>
+                          <select class="form-control" name="p_product" id="p_product">
+                              <option value="Select Product" disabled selected>Select Product</option>
+                              <option value="Cdm One +">CDM ONE +</option>
+                              <option value="Aqpe User Mobile App">AQPE USER MOBILE APP</option>
+                              <option value="Retailers ATM">RETAILERS ATM</option>
+                              <option value="Merchant Payment Device">MERCHANT PAYMENT DEVICE</option>
+                          </select>
+                          <div class="errorform" id="p_productErr"></div>
+                      </div>
+                      <div class="form-group">
+                          <label for="p_message">Message</label>
+                          <textarea name="p_message" id="p_message" class="form-control" rows="5"></textarea>
+                          <div class="errorform" id="p_messageErr"></div>
+                      </div>
+                      <div class="form-group mt-3">
+                          <button type="button" class="btn btn-primary" id="send_btn1" onclick="validateEnquiryForm()">Send Message</button>
+                          <div id="succ-popup-alert" style="color: green; padding: 6px 0px 0px 16px; text-align: center; font-family: 'Gilroy-Bold';"></div>
+                          <div id="fail-popup-alert" style="color: red; padding: 6px 0px 0px 16px; text-align: center; font-family: 'Gilroy-Bold';"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
 <script>
   
