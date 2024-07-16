@@ -389,3 +389,17 @@ function validateContactForm() {
 
   return isValid;
 }
+
+// product page addEventlistener
+document.addEventListener("DOMContentLoaded", function () {
+  const atmFilter = document.querySelector(".atm-filter");
+  const merchantFilter = document.querySelector(".merchant-filter");
+
+  atmFilter.addEventListener("click", function () {
+    window.location.href = "atm.html";
+  });
+
+  merchantFilter.addEventListener("click", function () {
+    window.location.href = "merchant.html";
+  });
+});
