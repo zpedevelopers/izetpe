@@ -20,9 +20,18 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Vendor CSS Files -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -101,10 +110,12 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li class="navbar"><a href="index.html" >Home</a></li>
+            <li class="navbar"><a href="index.html">Home</a></li>
             <li class="navbar"><a href="about.html">About</a></li>
             <li class="navbar"><a href="services.html">Services</a></li>
-            <li class="navbar"><a href="products.html" class="active">Products</a></li>
+            <li class="navbar">
+              <a href="products.html" class="active">Products</a>
+            </li>
             <li class="navbar"><a href="team.html">Our Partner</a></li>
             <li class="navbar"><a href="gallery.html">Gallery</a></li>
             <li class="navbar"><a href="blog.html">Newsletter</a></li>
@@ -122,84 +133,187 @@
           <div class="container section-title">
             <h2 style="color: orange">OUR PRODUCTS</h2>
           </div>
-          <nav class="breadcrumbs" style="display: flex;">
+          <nav class="breadcrumbs" style="display: flex">
             <ol>
-              <li style="font-weight: bold;"><a href="index.html">Home</a></li>
+              <li style="font-weight: bold"><a href="index.html">Home</a></li>
               <li class="current">Products</li>
             </ol>
           </nav>
         </div>
       </div>
       <!-- End Page Title -->
-      
+
       <!-- Products Section -->
       <section id="products" class="products section">
         <div class="container">
-          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-            <ul class="products-filters isotope-filters" data-aos="fade-up" data-aos-delay="100" style="margin-bottom: 30px">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="products-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="margin-bottom: 30px"
+            >
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app" class="atm-filter">ATM</li>
               <li data-filter=".filter-product">AQPE</li>
-              <li data-filter=".filter-branding" class="merchant-filter">MERCHANT</li>
+              <li data-filter=".filter-branding" class="merchant-filter">
+                MERCHANT
+              </li>
             </ul>
             <!-- End Products Filters -->
-      
-            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-              <div class="col-lg-4 col-md-6 products-item isotope-item filter-app">
-                <div class="products-content h-100 d-flex" style="border-radius: 10px;">
-                  <img src="assets/img/product/cdm.png" class="img-fluid" alt="" />
+
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 products-item isotope-item filter-app"
+              >
+                <div
+                  class="products-content h-100 d-flex"
+                  style="border-radius: 10px"
+                >
+                  <img
+                    src="assets/img/product/cdm.png"
+                    class="img-fluid"
+                    alt=""
+                  />
                   <div class="products-info">
                     <h4>CDM ONE +</h4>
-                    <a href="assets/img/product/cdm.png" title="CDM ONE" data-gallery="products-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="cdm.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a
+                      href="assets/img/product/cdm.png"
+                      title="CDM ONE"
+                      data-gallery="products-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a href="cdm.html" title="More Details" class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
                   </div>
                 </div>
               </div>
               <!-- End Products Item -->
-      
-              <div class="col-lg-4 col-md-6 products-item isotope-item filter-product">
+
+              <div
+                class="col-lg-4 col-md-6 products-item isotope-item filter-product"
+              >
                 <div class="products-content h-100" style="border-radius: 10px">
-                  <img src="assets/img/product/mobile.png" class="img-fluid" alt="" />
+                  <img
+                    src="assets/img/product/mobile.png"
+                    class="img-fluid"
+                    alt=""
+                  />
                   <div class="products-info">
                     <h4>AQPE</h4>
-                    <a href="assets/img/product/mobile.png" title="AQPE" data-gallery="products-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="aqpe.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a
+                      href="assets/img/product/mobile.png"
+                      title="AQPE"
+                      data-gallery="products-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="aqpe.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
                   </div>
                 </div>
               </div>
               <!-- End Products Item -->
-      
-              <div class="col-lg-4 col-md-6 products-item isotope-item filter-branding">
+
+              <div
+                class="col-lg-4 col-md-6 products-item isotope-item filter-branding"
+              >
                 <div class="products-content h-100" style="border-radius: 10px">
-                  <img src="./assets/img/product/device.png" class="img-fluid" alt="" />
+                  <img
+                    src="./assets/img/product/device.png"
+                    class="img-fluid"
+                    alt=""
+                  />
                   <div class="products-info">
                     <h4>Mobile Device</h4>
-                    <a href="./assets/img/product/device.png" title="Mobile Device" data-gallery="products-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="mobiledevice.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a
+                      href="./assets/img/product/device.png"
+                      title="Mobile Device"
+                      data-gallery="products-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="mobiledevice.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
                   </div>
                 </div>
               </div>
               <!-- End Products Item -->
-      
-              <div class="col-lg-4 col-md-6 products-item isotope-item filter-app">
+
+              <div
+                class="col-lg-4 col-md-6 products-item isotope-item filter-app"
+              >
                 <div class="products-content h-100" style="border-radius: 10px">
-                  <img src="assets/img/product/product-3.png" style="height: 350px; width: 500px" class="img-fluid" alt="" />
+                  <img
+                    src="assets/img/product/product-3.png"
+                    style="height: 350px; width: 500px"
+                    class="img-fluid"
+                    alt=""
+                  />
                   <div class="products-info">
                     <h4>QR ATM</h4>
-                    <a href="assets/img/product/product-3.png" title="QR ATM" data-gallery="products-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="qratm.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a
+                      href="assets/img/product/product-3.png"
+                      title="QR ATM"
+                      data-gallery="products-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="qratm.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
                   </div>
                 </div>
               </div>
               <!-- End Products Item -->
-      
-              <div class="col-lg-4 col-md-6 products-item isotope-item filter-branding">
+
+              <div
+                class="col-lg-4 col-md-6 products-item isotope-item filter-branding"
+              >
                 <div class="products-content h-100" style="border-radius: 10px">
-                  <img src="assets/img/product/pdevice.jpg" style="height: 350px; width: 500px" class="img-fluid" alt="" />
+                  <img
+                    src="assets/img/product/pdevice.jpg"
+                    style="height: 350px; width: 500px"
+                    class="img-fluid"
+                    alt=""
+                  />
                   <div class="products-info">
                     <h4>PAX Device</h4>
-                    <a href="assets/img/product/pdevice.jpg" title="PAX Device" data-gallery="products-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="paxdevice.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a
+                      href="assets/img/product/pdevice.jpg"
+                      title="PAX Device"
+                      data-gallery="products-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="paxdevice.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -210,9 +324,6 @@
         </div>
       </section>
       <!-- /products Section -->
-      
-
-     
     </main>
 
     <!-- Footer Section -->
@@ -332,10 +443,17 @@
     </footer>
 
     <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" ><i class="bi bi-arrow-up-short"></i></a>
-    
-  <!-- Whatsapp icon  -->
-  <a class="whatsapp-btn" href="https://wa.me/+919994320972" target="blank"><i class="fa-brands fa-whatsapp "></i></a>
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Whatsapp icon  -->
+    <a class="whatsapp-btn" href="https://wa.me/+919994320972" target="blank"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
 
     <!-- Preloader -->
     <div id="preloader"></div>
