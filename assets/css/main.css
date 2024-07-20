@@ -1,16 +1,4 @@
-/**
-* Template Name: Eterna
-* Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-* Updated: Jun 27 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Open Sans","Gilroy-SemiBold","Gilroy-Medium","Gilroy-Regular",  "Gilroy-Bold",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Gilroy-Regular";
@@ -64,22 +52,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   
-  @font-face {
-    font-family: Gilroy-Bold;
-    src: url("../fonts/Gilroy-Bold.ttf");
-  }
-  @font-face {
-    font-family: Gilroy-SemiBold;
-    src: url("../fonts/Gilroy-SemiBold.ttf");
-  }
-  @font-face {
-    font-family: Gilroy-Medium;
-    src: url("../fonts/Gilroy-Medium.ttf");
-  }
-  @font-face {
-    font-family: Gilroy-Regular;
-    src: url("../fonts/Gilroy-Regular.ttf");
-  }
+
   
  
 }
@@ -1283,6 +1256,7 @@ section,
   border-radius: 10px;
   border: none;
   color: white;
+  
 }
 
 :hover.buttonorange{
@@ -2529,3 +2503,56 @@ section {
 }
 
 .hidden { display: none; }
+
+/* career pages */
+
+.individual-banner {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.individual-banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.careers-sec,
+.career-cards,
+.career-opening {
+  padding: 50px 0;
+}
+
+.careers-sec h2 {
+  color: blue;
+}
+
+.career-cards .career-items {
+  margin-bottom: 30px;
+}
+
+.open-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(226, 218, 218);
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.apply-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
+
+.career-opening h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
