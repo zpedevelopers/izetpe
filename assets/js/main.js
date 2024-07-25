@@ -403,3 +403,75 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "merchant.html";
   });
 });
+
+
+// career apply page 
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("btn-apply");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function submitForm() {
+    // Your form submission logic here
+}
+
+function applyNow() {
+    // Your subscribe logic here
+}
+
+$(document).ready(function($) {
+    var phoneInputID = "#cr_mobile";
+    var input = document.querySelector(phoneInputID);
+    iti = window.intlTelInput(
+        input, {
+            formatOnDisplay: true,
+            autoHideDialCode: false,
+            autoPlaceholder: "aggressive",
+            hiddenInput: "full_number",
+            initialCountry: "in",
+            preferredCountries: ['in'],
+            separateDialCode: true,
+            customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+                return '' + selectedCountryPlaceholder.replace(/[0-9]/g, 'X');
+            },
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js"
+        });
+    $(phoneInputID).on("focus click countrychange", function(e, countryData) {
+        var pl = $(this).attr('placeholder') + '';
+        var res = pl.replace(/X/g, '9');
+        if (res != 'undefined') {
+            $(this).inputmask(res, {
+                placeholder: "X",
+                clearMaskOnLostFocus: true
+            });
+        }
+        console.log(phoneInputID);
+    });
+    $(phoneInputID).on("focusout", function(e, countryData) {
+        var intlNumber = iti.getNumber();
+        console.log(intlNumber);
+    });
+});
+
+$(document).ready(function() {
+    $('.iti__flag-container').click(function() {
+        var countryCode = $('.iti__selected-flag').attr('title');
+        var countryCode = countryCode.replace(/[^0-9]/g, '')
+        $('cr_mobile').val("");
+        $('cr_mobile').val("+" + countryCode + " " + $('cr_mobile').val());
+    });
+});
