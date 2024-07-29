@@ -1,6 +1,6 @@
 
 :root {
-  --default-font: "Gilroy-SemiBold","Gilroy-Medium","Gilroy-Regular", "Open Sans", "Gilroy-Bold","system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "Liberation Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Gilroy-SemiBold","Gilroy-Medium","Gilroy-Regular", "Open Sans", ,"system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "Liberation Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Gilroy-SemiBold";
   --nav-font: "Gilroy-Bold";
   
@@ -301,7 +301,6 @@ h2 > a:focus:before {
     display: flex;
     list-style: none;
     align-items: center;
-    font-family: 'Gilroy-Bold', sans-serif;
     
   }
 
@@ -323,7 +322,7 @@ h2 > a:focus:before {
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
-    
+    font-family: 'Gilroy-Bold', sans-serif;
   }
 
   .navmenu a i,
@@ -395,6 +394,7 @@ h2 > a:focus:before {
     border-radius: 50%;
     transition: 0.3s;
     background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    
   }
 
   .navmenu a i:hover,
