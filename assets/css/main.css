@@ -789,6 +789,26 @@ section,
   margin: auto;
 }
 
+.section-title h3 {
+
+  font-weight: 700;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: rgb(7, 7, 94);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 .section-title p {
   margin-bottom: 0;
 }
@@ -1274,6 +1294,16 @@ background:rgb(236, 245, 248);
 .services .service-item:hover h3,
 .services .service-item:hover p {
   color: var(--contrast-color);
+}
+
+.service{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 22px;
+  padding: 10px;
+  padding-bottom: 20px;
+  color: orange;
 }
 
 /*--------------------------------------------------------------
