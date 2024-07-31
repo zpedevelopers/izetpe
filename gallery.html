@@ -143,145 +143,135 @@
         </div>
       </div><!-- End Page Title -->
   
-  <!-- start Partner Title -->
+  <!-- start gallery section -->
 
 
-    <section id="products" class="products section">
-      <div class="container">
-        <div
-          class="isotope-layout"
-          data-default-filter="*"
-          data-layout="masonry"
-          data-sort="original-order"
+  <section id="products" class="products section">
+    <div class="container">
+      <div
+        class="isotope-layout"
+        data-default-filter="*"
+        data-layout="masonry"
+        data-sort="original-order"
+      >
+        <ul
+          class="products-filters isotope-filters"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          style="margin-bottom: 30px"
         >
-          <ul
-            class="products-filters isotope-filters"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            style="margin-bottom: 30px"
-          >
-            <li id="filter-all" data-filter="*" class="filter-active">All</li>
-            <li id="filter-atm" data-filter=".filter-atm">ATM</li>
-            <li id="filter-videos" data-filter=".filter-videos">VIDEOS</li>
-          </ul>
-          <!-- End Products Filters -->
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-images" >Images</li>
+          <li data-filter=".filter-videos" >Videos </li>
+        
+        </ul>
+        <!-- End Products Filters -->
 
-          <!-- Gallery section  -->
-          <div class="container my-5">
-            <div class="row">
-              <!-- ATM Photos -->
-              <div class="col-md-4 mb-4 filter-atm">
-                <div class="card">
-                  <img
-                    src="./assets/img/product/pdevice.jpg"
-                    class="card-img-center img-thumbnail"
-                    style="width: 400px; height: 400px"
-                    alt="Thumbnail 1"
-                    data-toggle="modal"
-                    data-target="#galleryModal"
-                  />
-                </div>
-              </div>
-              <div class="col-md-4 mb-4 filter-atm">
-                <div class="card">
-                  <img
-                    src="./assets/img/product/pdevice.jpg"
-                    class="card-img-center img-thumbnail"
-                    style="width: 400px; height: 400px"
-                    alt="Thumbnail 2"
-                    data-toggle="modal"
-                    data-target="#galleryModal"
-                  />
-                </div>
-              </div>
-              <div class="col-md-4 mb-4 filter-atm">
-                <div class="card">
-                  <img
-                    src="./assets/img/product/pdevice.jpg"
-                    class="card-img-center img-thumbnail"
-                    style="width: 400px; height: 400px"
-                    alt="Thumbnail 3"
-                    data-toggle="modal"
-                    data-target="#galleryModal"
-                  />
-                </div>
-              </div>
-              <div class="col-md-4 mb-4 filter-atm">
-                <div class="card">
-                  <img
-                    src="./assets/img/product/pdevice.jpg"
-                    class="card-img-center img-thumbnail"
-                    style="width: 400px; height: 400px"
-                    alt="Thumbnail 4"
-                    data-toggle="modal"
-                    data-target="#galleryModal"
-                  />
-                </div>
-              </div>
-              <div class="col-md-4 mb-4 filter-atm">
-                <div class="card">
-                  <img
-                    src="./assets/img/product/pdevice.jpg"
-                    class="card-img-center img-thumbnail"
-                    style="width: 400px; height: 400px"
-                    alt="Thumbnail 5"
-                    data-toggle="modal"
-                    data-target="#galleryModal"
-                  />
-                </div>
-              </div>
-              <div class="col-md-4 mb-4 filter-atm">
-                <div class="card">
-                  <img
-                    src="./assets/img/product/pdevice.jpg"
-                    class="card-img-center img-thumbnail"
-                    style="width: 400px; height: 400px"
-                    alt="Thumbnail 6"
-                    data-toggle="modal"
-                    data-target="#galleryModal"
-                  />
-                </div>
-              </div>
-              <div class="col-md-4 mb-4 filter-atm">
-                <div class="card">
-                  <img
-                    src="./assets/img/product/pdevice.jpg"
-                    class="card-img-center img-thumbnail"
-                    style="width: 400px; height: 400px"
-                    alt="Thumbnail 7"
-                    data-toggle="modal"
-                    data-target="#galleryModal"
-                  />
-                </div>
-              </div>
-              <!-- Video section -->
-              <div class="col-md-4 mb-4 filter-videos">
-                <div class="card">
-                  <video width="400" height="400" controls>
-                    <source
-                      src="./assets/img/gallery/videos/cdmvideo.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-              <div class="col-md-4 mb-4 filter-videos">
-                <div class="card">
-                  <video width="400" height="400" controls>
-                    <source
-                      src="./assets/img/gallery/videos/cdmvideo.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
+        <div
+          class="row gy-4 isotope-container"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            class="col-lg-4 col-md-6 products-item isotope-item filter-images"
+          >
+            <div
+              class="products-content h-100 d-flex"
+              style="border-radius: 10px"
+            >
+              <img
+                src="assets/img/Gallery/cdmopen.JPG"
+                style="height: 350px; width: 500px"
+                class="img-fluid"
+                alt=""
+              />
+            
             </div>
           </div>
+          <!-- End Products Item -->
+
+          <div
+            class="col-lg-4 col-md-6 products-item isotope-item filter-videos"
+          >
+            <div class="products-content h-100" style="border-radius: 10px">
+              <video width="400" height="320" controls>
+                <source
+                  src="./assets/img/gallery/videos/cdmvideo.mp4"
+                  type="video/mp4"
+                /></video>
+              
+             
+            </div>
+          </div>
+          <!-- End Products Item -->
+
+         
+
+          <div
+            class="col-lg-4 col-md-6 products-item isotope-item filter-images"
+          >
+            <div class="products-content h-100" style="border-radius: 10px">
+              <img
+                src="assets/img/Gallery/atm.JPG"
+                style="height: 350px; width: 500px"
+                class="img-fluid"
+                alt=""
+              />
+              
+            </div>
+          </div>
+          <!-- End Products Item -->
+            <div
+            class="col-lg-4 col-md-6 products-item isotope-item filter-videos"
+            >
+              <div class="products-content h-100" style="border-radius: 10px">
+                <video width="400" height="350" controls>
+                  <source
+                    src="./assets/img/gallery/videos/office video.mp4"
+                    type="video/mp4"
+                  /></video>
+                
+               
+              </div>
+            </div>
+            <!-- End Products Item -->
+          <div
+          class="col-lg-4 col-md-6 products-item isotope-item filter-images"
+        >
+          <div class="products-content h-100" style="border-radius: 10px">
+            <img
+              src="assets/img/Gallery/open.JPG"
+              style="height: 350px; width: 500px"
+              class="img-fluid"
+              alt=""
+            />
+            
+          </div>
         </div>
+
+          <!-- End Products Item -->
+          <div
+          class="col-lg-4 col-md-6 products-item isotope-item filter-videos"
+          >
+            <div class="products-content h-100" style="border-radius: 10px">
+              <video width="400" height="350" controls>
+                <source
+                  src="./assets/img/gallery/videos/animate.mp4"
+                  type="video/mp4"
+                /></video>
+              
+             
+            </div>
+          </div>
+          <!-- End Products Item -->
+       
+          <!-- End Products Container -->
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- End Gallery Section -->
+
+
 
     <!-- Footer Section -->
     <footer id="footer" class="footer position-relative bg-body-secondary ">
