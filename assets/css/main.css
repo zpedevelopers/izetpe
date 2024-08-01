@@ -1889,7 +1889,7 @@ background:rgb(236, 245, 248);
 }
 
 .blog-posts .content .read-more {
-  text-align: right;
+  text-align: center;
 }
 
 .blog-posts .content .read-more a {
@@ -2468,10 +2468,12 @@ background:rgb(236, 245, 248);
 .recent-posts-widget .post-item {
   display: flex;
   margin-bottom: 15px;
+  align-items: center;
 }
 
 .recent-posts-widget .post-item:last-child {
   margin-bottom: 0;
+  
 }
 
 .recent-posts-widget .post-item img {
