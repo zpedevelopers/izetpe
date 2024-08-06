@@ -280,11 +280,7 @@ function validateEnquiryForm() {
       isValid = false;
   }
 
-  // Validate Last Name
-  if (form.p_lname.value.trim() === "") {
-      document.getElementById("p_lnameErr").innerText = "Last Name is required.";
-      isValid = false;
-  }
+ 
 
   // Validate Email
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -317,7 +313,7 @@ function validateEnquiryForm() {
       document.getElementById("succ-popup-alert").innerText = "Form submitted successfully!";
       document.getElementById("fail-popup-alert").innerText = "";
   } else {
-      document.getElementById("fail-popup-alert").innerText = "Please correct the errors and try again.";
+      document.getElementById("fail-popup-alert").innerText = "Please fill the details ";
       document.getElementById("succ-popup-alert").innerText = "";
   }
 
@@ -344,12 +340,7 @@ function validateContactForm() {
       isValid = false;
   }
 
-  // Validate Last Name
-  const lastName = document.getElementById('c_lname').value.trim();
-  if (lastName === "") {
-      document.getElementById('c_lnameErr').innerHTML = "Last Name is required.";
-      isValid = false;
-  }
+
 
   // Validate Email
   const email = document.getElementById('c_email').value.trim();
@@ -384,7 +375,90 @@ function validateContactForm() {
   if (isValid) {
       document.getElementById('succ-client-alert').innerHTML = "Form submitted successfully!";
   } else {
-      document.getElementById('fail-client-alert').innerHTML = "Please fix the errors above.";
+      document.getElementById('fail-client-alert').innerHTML = "Please fill the details above.";
+  }
+
+  return isValid;
+}
+
+// Franchise Enquiry
+function validateFranchiseForm() {
+  let isValid = true;
+
+  // Clear previous error messages
+  document.getElementById('f_fnameErr').innerHTML = "";
+  document.getElementById('f_distnameErr').innerHTML = "";
+  document.getElementById('f_citynameErr').innerHTML = "";
+  document.getElementById('f_pinErr').innerHTML = "";
+  document.getElementById('f_emailErr').innerHTML = "";
+  document.getElementById('f_mobileErr').innerHTML = "";
+  document.getElementById('succ-front-alert').innerHTML = "";
+  document.getElementById('fail-front-alert').innerHTML = "";
+
+  // Validate First Name
+  const firstName = document.getElementById('f_fname').value.trim();
+  if (firstName === "") {
+      document.getElementById('f_fnameErr').innerHTML = "First Name is required.";
+      isValid = false;
+  }
+
+  // Validate District Name
+  const distName = document.getElementById('f_distname').value.trim();
+  if (distName === "") {
+      document.getElementById('f_distnameErr').innerHTML = "District is required.";
+      isValid = false;
+  }
+
+   // Validate City Name
+   const cityName = document.getElementById('f_cityname').value.trim();
+   if (cityName === "") {
+       document.getElementById('f_citynameErr').innerHTML = "City is required.";
+       isValid = false;
+   }
+  // Validate Pincode
+const pin = document.getElementById('f_pin').value.trim();
+const pinErrorElement = document.getElementById('f_pinErr');
+
+if (pin === "") {
+    pinErrorElement.innerHTML = "Pin is required.";
+    isValid = false;
+} else if (!/^\d{6}$/.test(pin)) {
+    pinErrorElement.innerHTML = "Pin must be a 6-digit number.";
+    isValid = false;
+} else {
+    pinErrorElement.innerHTML = ""; // Clear any previous error messages
+}
+
+// You can return isValid if this is part of a larger validation function
+
+
+  // Validate Email
+  const email = document.getElementById('f_email').value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email === "") {
+      document.getElementById('f_emailErr').innerHTML = "Email is required.";
+      isValid = false;
+  } else if (!emailPattern.test(email)) {
+      document.getElementById('f_emailErr').innerHTML = "Invalid Email format.";
+      isValid = false;
+  }
+
+  // Validate Mobile Number
+  const mobile = document.getElementById('f_mobile').value.trim();
+  const mobilePattern = /^[0-9]{10}$/;
+  if (mobile === "") {
+      document.getElementById('f_mobileErr').innerHTML = "Mobile Number is required.";
+      isValid = false;
+  } else if (!mobilePattern.test(mobile)) {
+      document.getElementById('f_mobileErr').innerHTML = "Invalid Mobile Number.";
+      isValid = false;
+  }
+
+  // If all fields are valid
+  if (isValid) {
+      document.getElementById('succ-front-alert').innerHTML = "Form submitted successfully!";
+  } else {
+      document.getElementById('fail-front-alert').innerHTML = "Please fill the details .";
   }
 
   return isValid;

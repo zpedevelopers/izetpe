@@ -92,7 +92,8 @@
             <h2 style="color: antiquewhite;">Welcome to <span style="color: orange;">ZPE</span></h2>
             <p>
               Empower Your Financial Future with ZPe - Your Trusted Partner in the Digital Era.</p>
-            <a href="about.html" class="btn-get-started">For Enquiry</a>
+           
+      <button class=" btn btn-warning rounded-pill px-4 py-2" id="side_enquiry" data-toggle="modal" data-target="#modalform">For Enquiry</button>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -101,7 +102,7 @@
           <div class="carousel-container" style="font-weight: bold;font-size: x-large;text-align: center; color: white; ">
             <h2 style="color:orange">Innovation</h2>
             <p>Driving continuous improvement and pioneering solutions to enhance efficiency, security, and user experience in the realm of payment processing and ATM services.</p>
-            <a href="products.html" class="btn-get-started">For Enquiry</a>
+            <button class=" btn btn-warning rounded-pill px-4 py-2" id="side_enquiry" data-toggle="modal" data-target="#modalform">For Enquiry</button>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -110,7 +111,7 @@
           <div class="carousel-container"  style="font-weight: bold;font-size: x-large;text-align: center; color: white;">
             <h2 style="color:orange; font-weight: bold;">Our Services</h2>
             <p>customer satisfaction is our top priority. we provide 24/7 dedicated support to assist you whatever need it.</p>
-            <a href="services.html" class="btn-get-started">For Enquiry</a>
+            <button class=" btn btn-warning rounded-pill px-4 py-2" id="side_enquiry" data-toggle="modal" data-target="#modalform">For Enquiry</button>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -130,7 +131,68 @@
       </div>
 
     </section>
-    <!-- /Hero Section -->
+   
+     
+<!-- Enquiry Content -->
+<div class="modal fade" id="modalform" tabindex="-1" aria-labelledby="modalformLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" >
+      <div class="modal-content" style="width: 500px;">
+          <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="form_sec centered_content">
+                  <form method="post" action="" class="contact-form" id="enquiryForm">
+                      <div class="form-group row">
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                              <label for="p_fname">First Name*</label>
+                              <input type="text" name="p_fname" id="p_fname" class="form-control">
+                              <div class="errorform" id="p_fnameErr"></div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                              <label for="p_lname">Last Name</label>
+                              <input type="text" name="p_lname" id="p_lname" class="form-control">
+                              <div class="errorform" id="p_lnameErr"></div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="p_email">Email*</label>
+                          <input type="email" name="p_email" id="p_email" class="form-control">
+                          <div class="errorform" id="p_emailErr"></div>
+                      </div>
+                      <div class="form-group">
+                          <label for="p_mobile">Mobile Number*</label>
+                          <input type="tel" name="p_mobile" id="p_mobile" class="form-control">
+                          <div class="errorform" id="p_mobileErr"></div>
+                      </div>
+                      <div class="form-group">
+                          <label for="p_product">Select Product</label>
+                          <select class="form-control" name="p_product" id="p_product">
+                              <option value="Select Product" disabled selected>Select Product</option>
+                              <option value="Cdm One +">Z-17</option>
+                              <option value="Retailers ATM">Z-8</option>
+                              <option value="Merchant Payment Device">Z-35</option>
+                              <option value="Merchant Payment Device">Pax Device</option>
+                          </select>
+                          <div class="errorform" id="p_productErr"></div>
+                      </div>
+                      <div class="form-group">
+                          <label for="p_message">Message</label>
+                          <textarea name="p_message" id="p_message" class="form-control" rows="5"></textarea>
+                          <div class="errorform" id="p_messageErr"></div>
+                      </div>
+                      <div class="form-group mt-3">
+                          <div class="d-flex justify-content-center align-items-center"><button type="button" class="btn btn-primary" id="send_btn1" onclick="validateEnquiryForm()">Send Message</button></div>
+                          <div id="succ-popup-alert" style="color: green; padding: 6px 0px 0px 16px; text-align: center; font-family: 'Gilroy-Bold';"></div>
+                          <div id="fail-popup-alert" style="color: red; padding: 6px 0px 0px 16px; text-align: center; font-family: 'Gilroy-Bold';"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div> 
+ <!-- End Enquiry content  -->
 
     <!-- About Section -->
     <section id="about" class="section about">
@@ -179,8 +241,7 @@
           <ul class="products-filters isotope-filters" data-aos="fade-up" data-aos-delay="200" >
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">ATM</li>
-            <li data-filter=".filter-product">AQPE</li>
-            <li data-filter=".filter-branding">MERCHANT</li>
+            <li data-filter=".filter-product">PAX</li>
           </ul><!-- End Products Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -189,8 +250,8 @@
               <div class="products-content h-100" style="border-radius: 10px;">
                 <img src="assets/img/product/cdm.png" class="img-fluid" alt="">
                 <div class="products-info">
-                  <h4>CDM ONE +</h4>
-                  <a href="assets/img/product/cdm.png" title="CDM ONE+" data-gallery="products-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Z35</h4>
+                  <a href="assets/img/product/cdm.png" title="Z35" data-gallery="products-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="cdm.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -198,21 +259,21 @@
 
             <div class="col-lg-4 col-md-6 products-item isotope-item filter-product">
               <div class="products-content h-100 " style="border-radius: 10px;">
-                <img src="assets/img/product/mobile.png" class="img-fluid" alt="">
+                <img src="assets/img/product/paxdevice.png" class="img-fluid" alt=""style="height: 350px; width: 500px;">
                 <div class="products-info">
-                  <h4>AQPE</h4>
-                  <a href="assets/img/product/mobile.png" title="AQPE" data-gallery="products-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>PAX Device</h4>
+                  <a href="assets/img/product/paxdevice.png" title="PAX Device" data-gallery="products-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="aqpe.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Products Item -->
 
-            <div class="col-lg-4 col-md-6 products-item isotope-item filter-branding">
+            <div class="col-lg-4 col-md-6 products-item isotope-item filter-app">
               <div class="products-content h-100" style="border-radius: 10px;">
-                <img src="./assets/img/product/device.png" class="img-fluid" alt="">
+                <img src="./assets/img/home/retail.png" class="img-fluid" alt="" style="height: 350px; width: 500px;">
                 <div class="products-info">
-                  <h4>Mobile Device</h4>
-                  <a href="./assets/img/product/device.png" title="Mobile Device" data-gallery="products-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <h4>Z17</h4>
+                  <a href="./assets/img/home/retail.png" title="Z17" data-gallery="products-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="mobiledevice.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -223,23 +284,14 @@
               <div class="products-content h-100"style="border-radius: 10px;">
                 <img src="assets/img/product/product-3.png" style="height: 350px; width: 500px;" class="img-fluid" alt="">
                 <div class="products-info">
-                  <h4>QR ATM</h4>
+                  <h4>Z8</h4>
                   <a href="assets/img/product/product-3.png" title="QR ATM" data-gallery="products-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="qratm.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Products Item -->
 
-            <div class="col-lg-4 col-md-6 products-item isotope-item filter-branding">
-              <div class="products-content h-100"style="border-radius: 10px;">
-                <img src="assets/img/product/pdevice.jpg" style="height: 350px; width: 500px;" class="img-fluid" alt="">
-                <div class="products-info">
-                  <h4>PAX Device</h4>
-                  <a href="assets/img/product/pdevice.jpg" title="PAX Device" data-gallery="products-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="paxdevice.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Products Item -->
+     
 
           </div><!-- End Products Container -->
 
@@ -496,7 +548,7 @@
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="termsandconditions.html">Terms & Conditions</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="privacy&policy.html">Privacy Policy</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Franchise Enquiry</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="enquiry.html">Franchise Enquiry</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="career.html">Careers</a></li>
             <li style="font-size:13px;"><i class="bi bi-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
             
@@ -575,6 +627,12 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
