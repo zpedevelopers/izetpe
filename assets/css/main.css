@@ -2657,6 +2657,10 @@ section {
 
 .career-cards .career-items {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
 .open-box {
