@@ -45,6 +45,13 @@
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: HerrVonMuellerhoff-Regular;
+  src: url("/fonts/HerrVonMuellerhoff-Regular.ttf");
+}
+.founder-content h2 {
+  font-family: Harrington;
+}
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
@@ -2806,7 +2813,7 @@ width:60%;
   padding: 0;
 }
 .founder-content {
-  padding: 12% 20% 12% 8%;
+  padding:0% 20% 0% 8%;
 }
 .founder-content h5 {
   font-family: HerrVonMuellerhoff-Regular;
