@@ -49,9 +49,7 @@
   font-family: HerrVonMuellerhoff-Regular;
   src: url("/fonts/Herr_Von_Muellerhoff/HerrVonMuellerhoff-Regular.ttf");
 }
-.founder-content h2 {
-  font-family: Harrington;
-}
+
 .founder-content h5{
   font-family: HerrVonMuellerhoff-Regular;
 }
@@ -1221,7 +1219,7 @@ background:rgb(236, 245, 248);
   background-color: var(--surface-color);
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  padding: 30px 20px;
+  padding: 40px 20px;
   transition: all ease-in-out 0.3s;
   height: 100%;
 }
